@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Font Awesome для иконок (можно заменить на свои) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo-frame">
+            <img src="{{ url_for('static', filename='img/h-1.jpg') }}" alt="Моё фото">
+        </div>
+        <div class="text-content">
+            <h1>Andrew Andrey</h1>
+            <p class="subtitle" style="text-decoration: line-through;">Python-разработчик</p>
+            <p class="subtitle" >Тунеядство</p>
+            <p class="details" style="text-decoration: line-through;">Python | Flask | PyQt6</p>
+            <p class="subtitle" >Интернет серфер</p>
+            <div class="contacts">
+                <p>📧 graal101@mail.ru</p>
+                <p style="text-decoration: line-through;">📞 +7 (223) 322-23-23</p>
+            </div>
+            <!-- Кнопки соцсетей -->
+            <div class="social-buttons">
+                <a href="https://vk.com/id759419317" class="social-btn btn-vk" target="_blank">
+                    <i class="fab fa-vk"></i> VK
+                </a>
+                <a href="https://mail.ru" class="social-btn btn-mail" target="_blank">
+                    <i class="fas fa-envelope"></i> Mail.ru
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

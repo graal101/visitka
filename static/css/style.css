@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    /* Градиент: сверху чёрный (#121212), снизу тёмно-зелёный (#0A2E0A) */
+    background: linear-gradient(to bottom, #121212 0%, #0A2E0A 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    padding: 40px;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); /* Лёгкое размытие фона */
+}
+
+/* Стили для фото и текста (остаются как в прошлом примере) */
+.photo-frame {
+    border: 10px solid transparent;
+    border-image: linear-gradient(145deg, #D4AF37, #F5D033, #D4AF37) 1;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 
+        0 0 20px rgba(212, 175, 55, 0.6),
+        inset 0 0 20px rgba(212, 175, 55, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-frame:hover {
+    transform: translateY(-5px) rotateX(5deg);
+    box-shadow: 
+        0 10px 30px rgba(212, 175, 55, 0.8),
+        inset 0 0 25px rgba(212, 175, 55, 0.6);
+}
+
+/* Стили для кнопок соцсетей */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* VK (синий) */
+.btn-vk {
+    background-color: #4C75A3;
+}
+
+/* Mail.ru (оранжевый) */
+.btn-mail {
+    background-color: #FFA930;
+}
+
+/* Иконки (можно использовать Font Awesome) */
+.social-btn i {
+    margin-right: 8px;
+}
