@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Сайт визитка для учебы и практики. Для GitLab."""
+"""Сайт визитка для учебы и практики. Для Gita."""
 from flask import Flask, render_template
 
 app = Flask(__name__)
